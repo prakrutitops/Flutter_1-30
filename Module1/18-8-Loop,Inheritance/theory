@@ -1,0 +1,33 @@
+Data Type
+Without Data Type - var
+userinput
+Conditional statement: if,else if,else ,switch,case,break
+Looping Statement:For,While,Do While,for in,for each
+break keyword,continue ketword
+object creation
+method call
+Constructor
+default
+static
+Parametrized
+optional parameter[]
+named parameters{}
+
+Inheritance:When One Object Acquire all the properties and behaviour of parent class
+
+parent - child
+base - derived
+super -sub
+
+Types of Inheritance
+
+1)Single
+2)Multilevel
+3)Multiple-> not supported in dart
+4)Hierarchical
+5)Hybrid
+
+
+
+
+
