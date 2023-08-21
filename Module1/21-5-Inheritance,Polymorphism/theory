@@ -1,0 +1,37 @@
+extends ->class
+implements->interface
+
+@- annotation
+
+Inheritance
+
+Keywords:
+
+this->refrence keyword
+
+static-> old memory use ->value fix
+
+final-> if your class is final you can not inherit them
+->final will never change value
+
+super->
+
+-----------------------------------------------------------
+Polymorphism:Many ways to perform anything
+
+1)Method Overloading :Not Supported
+Two or methods having a same name but number of paramters are diffrent but it's not supported in dart
+why just because of dyamic typed language
+
+
+2)Method Overriding: Two or methods having a same name and number of paramters are also same
+at that time data will override or replace
+
+
+Thread -> Process Handle
+
+async
+await
+
+delay
+
