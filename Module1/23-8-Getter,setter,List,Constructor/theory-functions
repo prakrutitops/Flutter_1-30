@@ -1,0 +1,16 @@
+Setter & Getter
+->set & Get
+->First Always set the value after that you can get the value
+[Database- Model]
+
+Type Test Operator
+
+Functions:
+1)User Defined:
+ a)with para with return type
+ b)with return type without para
+ c)with para without return type
+ d)without return type and without para
+
+
+2)Inbuilt
