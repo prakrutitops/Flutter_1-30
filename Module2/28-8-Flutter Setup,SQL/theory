@@ -1,0 +1,10 @@
+1.Android Studio Install
+2.SDK->Software Development Kit
+3.Download - https://docs.flutter.dev/get-started/install/windows
+Flutter SDK
+4.Android Studio -> FIle->Settings->Plugins->Download Flutter & Dart
+and restart your android studio
+5.Path -> F:\software\flutter_windows_3.3.3-stable\flutter
+6.Give Details and Create your flutter project
+
+
