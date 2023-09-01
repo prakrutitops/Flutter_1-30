@@ -1,0 +1,115 @@
+DML:Data Manipulation Language
+Insert,Update,Delete
+
+DQL:Data Query Language
+Select
+
+Functions:
+MAX
+MIN
+SUM
+AVG
+
+DCL: Data Control
+rollback,commit
+
+JOIN:
+
+primary
+foreign-> index
+unique-> data uniquely identify
+
+INNER JOIN -> SELECT * FROM details2 JOIN course_details on details2.id = course_details.id
+LEFT JOIN->
+RIGHT JOIN
+FULL JOIN->
+SELECT * FROM details2 LEFT JOIN course_details on details2.id = course_details.id
+UNION
+SELECT * FROM details2 RIGHT JOIN course_details on details2.id = course_details.id
+
+-------------------------------------------------------------------------------------------
+
+===================================
+DML
+11. insert data
+insert into tablename (database Field nm) values ('control value')
+
+12. multiple value insert
+INSERT INTO tablename (countrynm) VALUES('india'), ('pakistan')
+
+
+13. update data
+update tablenm set databasefieldnm='controlvalue' where id='id'
+
+14. delete data
+delete from tablenm where id='id'
+======================================
+DQL
+15. select all
+select * from tablenm
+
+16. particular column dispaly
+SELECT columnnm from tablenm
+
+17. particular row display
+select * from tablenm where id='id' 
+
+18.order by
+select colnm from tblnm order by colnm asc/desc
+------------------------------------------------------------------------------------------
+18. join
+select * from state join coun on state.cid=coun.cid
+
+19.commit:
+START TRANSACTION;
+
+//delete from register where uid=1;
+
+//commit;
+
+/*20.rollback:
+START TRANSACTION;*/
+
+/*delete from register where uid=1;
+
+rollback;*/
+
+21.join:
+SELECT id  FROM cds INNER JOIN tops  ON cds.id = tops.id
+
+
+--------------------------------------------------------------
+
+
+DML
+insert
+multiple value insert
+update
+delete
+
+DQL
+select all
+select row
+select col
+order by
+
+DCL
+rollback
+commit
+
+Agreegate function
+SELECT MAX(salary) FROM signup;
+SELECT MIN(salary) FROM signup;
+SELECT SUM(salary) FROM signup;
+SELECT AVG(salary) FROM signup;
+
+JOINS:
+JOIN(INNER JOIN)->Common
+LEFT JOIN->Common,left all
+RIGHT JOIN->Common,right all
+
+
+
+
+
+
