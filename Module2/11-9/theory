@@ -1,0 +1,28 @@
+MaterialApp -> 1 app 1 widget
+Scaffold -> according to screens
+
+MaterialApp
+\
+scaffold
+\
+
+
+1)Single Componenet 
+MaterialApp -> Scaffold ->Center -> ElevatedButton
+
+2)Multi Componenet 
+MaterialApp -> Scaffold ->Center -> Column->childredn[]->Multi Componenet
+
+assest
+network image
+
+
+
+Product Image 
+Product Name
+Button->click ->console-> price-> About us
+
+
+
+
+
