@@ -1,0 +1,54 @@
+1. Add Dependency:
+shared_prefrences:
+
+2.Create Login Page
+
+->Using StatefulWidget
+->take 2 TextEditingController
+->take Sharedprefrence Object[logindata]
+->take one boolean value to verify session is true or false
+
+-> Scaffold
+-> Column
+-> Center
+-> children[]
+-> Text1
+-> Text2
+-> TextField1
+-> TextField2
+-> ElevatedButton
+-> take one initstate method
+-> call check_if_already_login method inside initstate
+->  check_if_already_login initialize logindata
+
+
+3. set the onpress event in login page
+
+-> take value from textfield to variable
+-> check both are empty or not
+-> if it's not empty then 
+   setbool(true/false)//logindata
+   setstring('email')
+   navigator.push
+
+4. dashboard page
+
+-> declare sharedprefrence[logindata]
+-> create initstate method
+-> call initial method inside initstate method
+-> get value inside intial method
+-> getbool(true/false)//logindata
+   getstring('email')
+-> Create Design and display getstring name
+-> Take One elevated Button -> Logout
+->  logindata.setBool('login', true);//logout
+-> Navigator.push//switching
+
+
+
+
+
+login -> false
+not login ->true
+
+
