@@ -1,0 +1,26 @@
+sqflite 
+
+1)Login Screen
+
+	Email 
+	Password
+	Login ->Button
+	Do you want to signup?
+
+2)Signup
+
+	Firstname
+	Lastname
+	Email
+	Password
+	Signup->Button
+	Do you want Login?
+
+3)After Login Dashboard screen will be open
+
+	Welcome Firstname
+	Option Menu ->Logout
+	Also Implement SharedPrefrence
+
+
+
