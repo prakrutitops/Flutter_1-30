@@ -1,1 +1,11 @@
 
+Cricketer_id
+Cricketer_name
+Cricketer_hscore
+Cricketer_Wickets
+Cricketer_Age
+
+insert
+view
+update
+delete
