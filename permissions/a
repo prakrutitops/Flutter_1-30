@@ -1,1 +1,103 @@
+//refrence -> https://github.com/Baseflow/flutter-permission-handler
+
+import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Permission Handling',
+      home: PermissionExample(),
+    );
+  }
+}
+
+class PermissionExample extends StatefulWidget {
+  @override
+  _PermissionExampleState createState() => _PermissionExampleState();
+}
+
+class _PermissionExampleState extends State<PermissionExample> {
+  PermissionStatus _permissionStatus = PermissionStatus.undetermined;
+
+  @override
+  void initState() {
+    super.initState();
+    _checkPermissionStatus();
+  }
+
+  Future<void> _checkPermissionStatus() async {
+    final status = await Permission.camera.status;
+    setState(() {
+      _permissionStatus = status;
+    });
+  }
+
+  Future<void> _requestPermission() async {
+    final status = await Permission.camera.request();
+    setState(() {
+      _permissionStatus = status;
+    });
+  }
+
+  Widget _buildPermissionButton() {
+    switch (_permissionStatus) {
+      case PermissionStatus.granted:
+        return ElevatedButton(
+          onPressed: () {
+            // Permission is granted, perform your camera-related tasks here
+            // For example: Open camera or navigate to camera-related screen
+          },
+          child: Text('Open Camera'),
+        );
+      case PermissionStatus.denied:
+        return ElevatedButton(
+          onPressed: _requestPermission,
+          child: Text('Request Permission'),
+        );
+      case PermissionStatus.restricted:
+      case PermissionStatus.permanentlyDenied:
+        return ElevatedButton(
+          onPressed: () {
+            // Open app settings for the user to grant the permission manually
+            openAppSettings();
+          },
+          child: Text('Open App Settings'),
+        );
+      default:
+        return Container();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Permission Handling'),
+      ),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                'Camera Permission',
+                style: TextStyle(fontSize: 20),
+              ),
+              SizedBox(height: 20),
+              _buildPermissionButton(),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
 
